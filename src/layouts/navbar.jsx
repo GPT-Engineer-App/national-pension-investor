@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Package2, Home, LogIn, UserPlus, LayoutDashboard } from "lucide-react";
+import { CircleUser, Menu, Package2, Home, BookOpen, Calculator, Mail, Info } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
@@ -41,17 +41,21 @@ const DesktopNav = () => (
       <Home className="h-4 w-4" />
       Home
     </NavItem>
-    <NavItem to="/dashboard" className="flex items-center gap-2">
-      <LayoutDashboard className="h-4 w-4" />
-      Dashboard
+    <NavItem to="/blogs" className="flex items-center gap-2">
+      <BookOpen className="h-4 w-4" />
+      Blogs
     </NavItem>
-    <NavItem to="/signup" className="flex items-center gap-2">
-      <UserPlus className="h-4 w-4" />
-      Sign Up
+    <NavItem to="/calculators" className="flex items-center gap-2">
+      <Calculator className="h-4 w-4" />
+      Calculators
     </NavItem>
-    <NavItem to="/login" className="flex items-center gap-2">
-      <LogIn className="h-4 w-4" />
-      Login
+    <NavItem to="/contact" className="flex items-center gap-2">
+      <Mail className="h-4 w-4" />
+      Contact Us
+    </NavItem>
+    <NavItem to="/about" className="flex items-center gap-2">
+      <Info className="h-4 w-4" />
+      About Us
     </NavItem>
   </nav>
 );
@@ -77,17 +81,21 @@ const MobileNav = () => (
           <Home className="h-4 w-4" />
           Home
         </NavItem>
-        <NavItem to="/dashboard" className="flex items-center gap-2">
-          <LayoutDashboard className="h-4 w-4" />
-          Dashboard
+        <NavItem to="/blogs" className="flex items-center gap-2">
+          <BookOpen className="h-4 w-4" />
+          Blogs
         </NavItem>
-        <NavItem to="/signup" className="flex items-center gap-2">
-          <UserPlus className="h-4 w-4" />
-          Sign Up
+        <NavItem to="/calculators" className="flex items-center gap-2">
+          <Calculator className="h-4 w-4" />
+          Calculators
         </NavItem>
-        <NavItem to="/login" className="flex items-center gap-2">
-          <LogIn className="h-4 w-4" />
-          Login
+        <NavItem to="/contact" className="flex items-center gap-2">
+          <Mail className="h-4 w-4" />
+          Contact Us
+        </NavItem>
+        <NavItem to="/about" className="flex items-center gap-2">
+          <Info className="h-4 w-4" />
+          About Us
         </NavItem>
       </nav>
     </SheetContent>

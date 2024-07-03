@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Package2 } from "lucide-react";
+import { CircleUser, Menu, Package2, Home, BookOpen, Calculator, Mail, Info } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
@@ -42,12 +42,26 @@ const Sidebar = () => (
       </div>
       <div className="flex-1">
         <nav className="grid items-start px-2 text-sm font-medium lg:px-4 gap-2">
-          {navItems.map((item) => (
-            <SidebarNavLink key={item.to} to={item.to}>
-              {item.icon}
-              {item.title}
-            </SidebarNavLink>
-          ))}
+          <SidebarNavLink to="/" className="flex items-center gap-2">
+            <Home className="h-4 w-4" />
+            Home
+          </SidebarNavLink>
+          <SidebarNavLink to="/blogs" className="flex items-center gap-2">
+            <BookOpen className="h-4 w-4" />
+            Blogs
+          </SidebarNavLink>
+          <SidebarNavLink to="/calculators" className="flex items-center gap-2">
+            <Calculator className="h-4 w-4" />
+            Calculators
+          </SidebarNavLink>
+          <SidebarNavLink to="/contact" className="flex items-center gap-2">
+            <Mail className="h-4 w-4" />
+            Contact Us
+          </SidebarNavLink>
+          <SidebarNavLink to="/about" className="flex items-center gap-2">
+            <Info className="h-4 w-4" />
+            About Us
+          </SidebarNavLink>
         </nav>
       </div>
     </div>
@@ -71,11 +85,26 @@ const MobileSidebar = () => (
           <Package2 className="h-6 w-6" />
           <span className="sr-only">National Pension Scheme</span>
         </NavLink>
-        {navItems.map((item) => (
-          <SidebarNavLink key={item.to} to={item.to}>
-            {item.title}
-          </SidebarNavLink>
-        ))}
+        <SidebarNavLink to="/" className="flex items-center gap-2">
+          <Home className="h-4 w-4" />
+          Home
+        </SidebarNavLink>
+        <SidebarNavLink to="/blogs" className="flex items-center gap-2">
+          <BookOpen className="h-4 w-4" />
+          Blogs
+        </SidebarNavLink>
+        <SidebarNavLink to="/calculators" className="flex items-center gap-2">
+          <Calculator className="h-4 w-4" />
+          Calculators
+        </SidebarNavLink>
+        <SidebarNavLink to="/contact" className="flex items-center gap-2">
+          <Mail className="h-4 w-4" />
+          Contact Us
+        </SidebarNavLink>
+        <SidebarNavLink to="/about" className="flex items-center gap-2">
+          <Info className="h-4 w-4" />
+          About Us
+        </SidebarNavLink>
       </nav>
     </SheetContent>
   </Sheet>

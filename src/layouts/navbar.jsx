@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Package2 } from "lucide-react";
+import { CircleUser, Menu, Package2, Home, LogIn, UserPlus, LayoutDashboard } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
@@ -35,13 +35,24 @@ const DesktopNav = () => (
       className="flex items-center gap-2 text-lg font-semibold md:text-base"
     >
       <Package2 className="h-6 w-6" />
-      <span className="sr-only">Acme Inc</span>
+      <span className="sr-only">National Pension Scheme</span>
     </NavItem>
-    {navItems.map((item) => (
-      <NavItem key={item.to} to={item.to}>
-        {item.title}
-      </NavItem>
-    ))}
+    <NavItem to="/" className="flex items-center gap-2">
+      <Home className="h-4 w-4" />
+      Home
+    </NavItem>
+    <NavItem to="/dashboard" className="flex items-center gap-2">
+      <LayoutDashboard className="h-4 w-4" />
+      Dashboard
+    </NavItem>
+    <NavItem to="/signup" className="flex items-center gap-2">
+      <UserPlus className="h-4 w-4" />
+      Sign Up
+    </NavItem>
+    <NavItem to="/login" className="flex items-center gap-2">
+      <LogIn className="h-4 w-4" />
+      Login
+    </NavItem>
   </nav>
 );
 
@@ -60,13 +71,24 @@ const MobileNav = () => (
           className="flex items-center gap-2 text-lg font-semibold"
         >
           <Package2 className="h-6 w-6" />
-          <span className="sr-only">Acme Inc</span>
+          <span className="sr-only">National Pension Scheme</span>
         </NavItem>
-        {navItems.map((item) => (
-          <NavItem key={item.to} to={item.to}>
-            {item.title}
-          </NavItem>
-        ))}
+        <NavItem to="/" className="flex items-center gap-2">
+          <Home className="h-4 w-4" />
+          Home
+        </NavItem>
+        <NavItem to="/dashboard" className="flex items-center gap-2">
+          <LayoutDashboard className="h-4 w-4" />
+          Dashboard
+        </NavItem>
+        <NavItem to="/signup" className="flex items-center gap-2">
+          <UserPlus className="h-4 w-4" />
+          Sign Up
+        </NavItem>
+        <NavItem to="/login" className="flex items-center gap-2">
+          <LogIn className="h-4 w-4" />
+          Login
+        </NavItem>
       </nav>
     </SheetContent>
   </Sheet>

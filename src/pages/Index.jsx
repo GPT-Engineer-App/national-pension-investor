@@ -9,6 +9,15 @@ const Index = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-16">
+      {/* Banner Section */}
+      <section className="relative w-full h-[75vh] bg-cover bg-center" style={{ backgroundImage: "url('/images/banner.jpg')" }}>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white space-y-4">
+          <h1 className="text-6xl font-bold">Secure Your Future</h1>
+          <p className="text-2xl">Invest in the National Pension Scheme Today</p>
+          <Button onClick={() => navigate("/signup")} className="mt-4">Get Started</Button>
+        </div>
+      </section>
       {/* Hero Section */}
       <section className="text-center space-y-4">
         <h1 className="text-5xl font-bold">Welcome to the National Pension Scheme</h1>

@@ -16,84 +16,59 @@ const Index = () => {
         <Button onClick={() => navigate("/signup")}>Get Started</Button>
       </section>
 
-      {/* Features Section */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <Card>
-          <CardHeader>
-            <Package2 className="h-12 w-12 mx-auto text-primary" />
-            <CardTitle>Feature One</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Benefit from our comprehensive pension plans tailored to your needs.</p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <Star className="h-12 w-12 mx-auto text-primary" />
-            <CardTitle>Feature Two</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Enjoy tax benefits and secure your financial future with ease.</p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <User className="h-12 w-12 mx-auto text-primary" />
-            <CardTitle>Feature Three</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Get personalized support and guidance from our expert advisors.</p>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="space-y-8 text-center">
-        <h2 className="text-3xl font-semibold">What Our Users Say</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card>
-            <CardHeader>
-              <Avatar className="mx-auto">
-                <AvatarImage src="/images/user1.jpg" alt="User 1" />
-                <AvatarFallback>U1</AvatarFallback>
-              </Avatar>
-              <CardTitle>John Doe</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>"The National Pension Scheme has given me peace of mind for my retirement."</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <Avatar className="mx-auto">
-                <AvatarImage src="/images/user2.jpg" alt="User 2" />
-                <AvatarFallback>U2</AvatarFallback>
-              </Avatar>
-              <CardTitle>Jane Smith</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>"I love the tax benefits and the personalized support I receive."</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <Avatar className="mx-auto">
-                <AvatarImage src="/images/user3.jpg" alt="User 3" />
-                <AvatarFallback>U3</AvatarFallback>
-              </Avatar>
-              <CardTitle>Robert Brown</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>"Investing in the National Pension Scheme was the best decision I made."</p>
-            </CardContent>
-          </Card>
+      {/* Segment One */}
+      <section className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="md:w-1/2">
+          <img src="/images/segment1.jpg" alt="Segment 1" className="w-full h-auto" />
+        </div>
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-semibold">Segment One</h2>
+          <p className="text-lg">Description for segment one goes here.</p>
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="text-center space-y-4">
-        <h2 className="text-3xl font-semibold">Ready to Secure Your Future?</h2>
-        <Button onClick={() => navigate("/signup")}>Sign Up Now</Button>
+      {/* Segment Two */}
+      <section className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-semibold">Segment Two</h2>
+          <p className="text-lg">Description for segment two goes here.</p>
+        </div>
+        <div className="md:w-1/2">
+          <img src="/images/segment2.jpg" alt="Segment 2" className="w-full h-auto" />
+        </div>
+      </section>
+
+      {/* Segment Three */}
+      <section className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="md:w-1/2">
+          <img src="/images/segment3.jpg" alt="Segment 3" className="w-full h-auto" />
+        </div>
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-semibold">Segment Three</h2>
+          <p className="text-lg">Description for segment three goes here.</p>
+        </div>
+      </section>
+
+      {/* Segment Four */}
+      <section className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-semibold">Segment Four</h2>
+          <p className="text-lg">Description for segment four goes here.</p>
+        </div>
+        <div className="md:w-1/2">
+          <img src="/images/segment4.jpg" alt="Segment 4" className="w-full h-auto" />
+        </div>
+      </section>
+
+      {/* Segment Five */}
+      <section className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="md:w-1/2">
+          <img src="/images/segment5.jpg" alt="Segment 5" className="w-full h-auto" />
+        </div>
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-semibold">Segment Five</h2>
+          <p className="text-lg">Description for segment five goes here.</p>
+        </div>
       </section>
 
       {/* Footer */}

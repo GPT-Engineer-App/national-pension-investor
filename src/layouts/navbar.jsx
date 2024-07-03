@@ -15,7 +15,7 @@ import { navItems } from "../App";
 const Layout = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 justify-between">
+      <header className="fixed top-0 left-0 right-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 justify-center z-50">
         <nav className="flex items-center gap-5 lg:gap-6 text-lg font-medium md:text-sm">
           <NavItem
             to="/"
@@ -47,7 +47,7 @@ const Layout = () => {
         </nav>
         <UserMenu />
       </header>
-      <main className="flex-grow p-4 overflow-auto">
+      <main className="flex-grow p-4 overflow-auto mt-16">
         <Outlet />
       </main>
     </div>

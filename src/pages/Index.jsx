@@ -1,10 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="text-center">
-      <h1 className="text-3xl">Your Blank Canvas</h1>
-      <p>Chat with the agent to start making edits.</p>
+    <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+      <h1 className="text-3xl">Welcome to the National Pension Scheme</h1>
+      <p>Secure your future by investing in the National Pension Scheme.</p>
+      <div className="space-x-4">
+        <Button onClick={() => navigate("/signup")}>Sign Up</Button>
+        <Button variant="outline" onClick={() => navigate("/login")}>
+          Log In
+        </Button>
+      </div>
     </div>
   );
 };

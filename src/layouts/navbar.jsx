@@ -17,8 +17,8 @@ const Layout = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="fixed top-0 left-0 right-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 justify-between z-50">
-        <nav className="flex items-center gap-5 lg:gap-6 text-lg font-medium md:text-sm">
+      <header className="fixed top-0 left-0 right-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 justify-center z-50">
+        <nav className="flex items-center gap-5 lg:gap-6 text-lg font-medium md:text-sm justify-center">
           <NavItem
             to="/"
             className="flex items-center gap-2 text-lg font-semibold md:text-base"
